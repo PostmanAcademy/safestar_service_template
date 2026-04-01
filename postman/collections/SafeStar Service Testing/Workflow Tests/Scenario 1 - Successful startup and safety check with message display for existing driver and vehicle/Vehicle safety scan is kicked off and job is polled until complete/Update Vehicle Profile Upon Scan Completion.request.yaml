@@ -1,0 +1,15 @@
+$kind: http-request
+name: Update Vehicle Profile Upon Scan Completion
+url: "{{baseUrl}}/vehicle/:id"
+method: PATCH
+headers:
+  x-mock-response-code: "200"
+pathVariables:
+  id: "{{vehicleID}}"
+body:
+  type: json
+  content: |-
+    {
+        "newCode": false
+    }
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+name: Existing driver is found
+url: "{{baseUrl}}/driver/:id"
+method: GET
+pathVariables:
+  id: "{{driverID}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("SafetyScore is a number", function () {
+          var jsonData = pm.response.json();
+          pm.expect(jsonData.safetyScore).to.be.a('string');
+      });
+    language: text/javascript
+order: 1000
