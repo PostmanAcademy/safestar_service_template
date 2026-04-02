@@ -31,7 +31,7 @@ scripts:
               required: ["firstName", "lastName", "license", "email"],
               properties: {
                 firstName: { type: "string" },
-                lastName: { type: "string" },
+                lastName: { type: "number" },
                 email: { type: "string" },
                 license: {
                   type: "object",
