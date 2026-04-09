@@ -3,3 +3,4 @@ values:
   - key: baseUrl
     value: 'http://localhost:4500'
     enabled: true
+color: 60
