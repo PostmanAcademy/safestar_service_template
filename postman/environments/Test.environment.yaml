@@ -3,4 +3,4 @@ values:
   - key: baseUrl
     value: https://demo.postman-academy.com/v1/safestar-test
     enabled: true
-color: 0
+color: 60
