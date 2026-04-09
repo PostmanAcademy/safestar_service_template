@@ -9,4 +9,15 @@ body:
       "driver": "{{driverID}}",
       "vehicle": "{{vehicleID}}"
     }
+auth:
+  type: jwt
+  credentials:
+    isSecretBase64Encoded: true
+    secret: "{{jwtSecret}}"
+    algorithm: HS256
+    payload: "{}"
+    addTokenTo: header
+    headerPrefix: Bearer
+    queryParamKey: token
+    header: "{}"
 order: 4000

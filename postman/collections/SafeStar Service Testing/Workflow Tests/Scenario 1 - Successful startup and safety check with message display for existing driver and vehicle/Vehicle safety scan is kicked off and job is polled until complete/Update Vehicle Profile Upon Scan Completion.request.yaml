@@ -12,4 +12,15 @@ body:
     {
         "newCode": false
     }
+auth:
+  type: jwt
+  credentials:
+    isSecretBase64Encoded: true
+    secret: "{{jwtSecret}}"
+    algorithm: HS256
+    payload: "{}"
+    addTokenTo: header
+    headerPrefix: Bearer
+    queryParamKey: token
+    header: "{}"
 order: 3000

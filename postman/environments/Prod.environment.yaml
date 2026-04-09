@@ -1,6 +1,9 @@
 name: Prod
 values:
   - key: baseUrl
-    value: https://demo.postman-academy.com/v1/safestar
+    value: 'https://demo.postman-academy.com/v1/safestar'
+    enabled: true
+  - key: jwtSecret
+    value: ''
     enabled: true
 color: 120

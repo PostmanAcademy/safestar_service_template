@@ -30,6 +30,17 @@ body:
       "weather": 2,
       "ignoredWarnings": 0
     }
+auth:
+  type: jwt
+  credentials:
+    isSecretBase64Encoded: true
+    secret: "{{jwtSecret}}"
+    algorithm: HS256
+    payload: "{}"
+    addTokenTo: header
+    headerPrefix: Bearer
+    queryParamKey: token
+    header: "{}"
 scripts:
   - type: afterResponse
     code: |-
