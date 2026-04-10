@@ -4,6 +4,6 @@ values:
     value: 'https://demo.postman-academy.com/v1/safestar'
     enabled: true
   - key: jwtSecret
-    value: ''
+    value: YS1zdHJpbmctc2VjcmV0LWF0LWxlYXN0LTI1Ni1iaXRzLWxvbmc=
     enabled: true
 color: 120
